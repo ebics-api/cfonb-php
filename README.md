@@ -1,4 +1,7 @@
 # cfonb-parser
+[![Build Status](https://travis-ci.org/andrew-svirin/cfonb-php.svg?branch=master)](https://travis-ci.org/andrew-svirin/cfonb-php)
+[![Latest Stable Version](https://poser.pugx.org/andrew-svirin/cfonb-php/v/stable)](https://packagist.org/packages/andrew-svirin/cfonb-php)
+[![License](https://poser.pugx.org/andrew-svirin/cfonb-php/license)](https://packagist.org/packages/andrew-svirin/cfonb-php)
 
 A PHP Parser for CFONB statements (120c), transfers (240c)
 
