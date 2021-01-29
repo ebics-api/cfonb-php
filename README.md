@@ -5,7 +5,7 @@
 
 A PHP Parser for CFONB statements (120c), transfers (240c)
 
-Supports CFONB 120 signature and CFONB 240 transactions formats.
+Supports CFONB 120 signature and CFONB 240 transactions formats.  
 Helper for [EBICS Client PHP](https://github.com/andrew-svirin/ebics-client-php)
 
 ## Installation
