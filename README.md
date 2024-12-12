@@ -1,16 +1,15 @@
 # cfonb-parser
-[![Build Status](https://travis-ci.org/andrew-svirin/cfonb-php.svg?branch=master)](https://travis-ci.org/andrew-svirin/cfonb-php)
-[![Latest Stable Version](https://poser.pugx.org/andrew-svirin/cfonb-php/v/stable)](https://packagist.org/packages/andrew-svirin/cfonb-php)
-[![License](https://poser.pugx.org/andrew-svirin/cfonb-php/license)](https://packagist.org/packages/andrew-svirin/cfonb-php)
+[![Latest Stable Version](https://poser.pugx.org/ebics-api/cfonb-php/v/stable)](https://packagist.org/packages/ebics-api/cfonb-php)
+[![License](https://poser.pugx.org/ebics-api/cfonb-php/license)](https://packagist.org/packages/ebics-api/cfonb-php)
 
 A PHP Parser for CFONB statements (120c), transfers (240c)
 
 Supports CFONB 120 signature and CFONB 240 transactions formats.  
-Helper for [EBICS Client PHP](https://github.com/andrew-svirin/ebics-client-php)
+Helper for [EBICS Client PHP](https://github.com/ebics-api/ebics-client-php)
 
 ## Installation
 ```bash
-$ composer require andrew-svirin/cfonb-php
+$ composer require ebics-api/cfonb-php
 ```
 
 ## How to use

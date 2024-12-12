@@ -44,10 +44,12 @@ abstract class AbstractReader
      */
     protected function getLines(string $content): array
     {
+        $content = ltrim(rtrim(str_replace(["\r\n", "\n\r", "\r"], "\n", $content), "\n"), "\n");
+
         if (!empty($content) && strlen($content) > $this->getLineLength() && strpos($content, "\n") === false) {
             $content = chunk_split($content, $this->getLineLength(), "\n");
         }
-        $lines = explode("\n", $content);
+        $lines = explode(PHP_EOL, $content);
 
         // Remove last empty line if exists.
         $lines = array_filter($lines, function ($line) {
@@ -70,6 +72,6 @@ abstract class AbstractReader
             }
         }
 
-        throw new ParseException(sprintf("Unable to find a parser for the line :\n\"%s\"", $line));
+        throw new ParseException(sprintf('Unable to find a parser for the line : "%s"', $line));
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "andrew-svirin/cfonb-php",
+    "name": "ebics-api/cfonb-php",
     "description": "A PHP Parser for CFONB 120 signatures, 240 transfers. Helper for EBICS.",
     "license": "MIT",
     "type": "library",
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": "^7.2 || ^8"
+        "php": "^7.4 || ^8"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5 | ^9.1",

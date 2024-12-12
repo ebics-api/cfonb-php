@@ -43,8 +43,7 @@ class Cfonb120ReaderTest extends TestCase
     public function testFailUnknownLine()
     {
         self::expectException(ParseException::class);
-        self::expectExceptionMessage('Unable to find a parser for the line :
-"abc "');
+        self::expectExceptionMessage('Unable to find a parser for the line : "abc "');
         $this->cfonbParser->read120C('abc ');
     }
 

@@ -1,0 +1,27 @@
+services:
+  php-cfonb-php:
+    container_name: php-cfonb-php
+    build:
+      context: php-cli
+    volumes:
+      - ~/.ssh:/home/root/.ssh
+      - ../:/var/www/cfonb-php
+      - ./php-cli/php.ini:/usr/local/etc/php/php.ini:ro
+    tty: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      cfonb-php-net:
+        ipv4_address: 172.152.0.3
+    environment:
+      PHP_IDE_CONFIG: "serverName=cfonb-php"
+
+networks:
+  cfonb-php-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.152.0.0/24
+    driver_opts:
+      com.docker.network.bridge.name: br_ecpcfonb
